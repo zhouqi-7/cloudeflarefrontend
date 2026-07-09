@@ -13,7 +13,7 @@ provide("api", api);
   <div class="app">
     <header class="header">
       <h1>Worker 接口验证工具</h1>
-      <p class="subtitle">向 Worker API 发送请求并验证返回数据</p>
+      <p class="subtitle">向 Worker API 发送请求并验证返回数据（注意：需要满足科学上网哈）</p>
     </header>
 
     <main class="main">
