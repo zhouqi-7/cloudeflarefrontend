@@ -20,7 +20,7 @@ function applyPreset(urlStr: string) {
   <div class="card">
     <div class="card-title">请求配置</div>
     <div class="input-row">
-      <input
+      <input 
         v-model="api.url.value"
         type="url"
         class="url-input"
