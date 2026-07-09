@@ -69,3 +69,10 @@ src/assets/color.less
 .mocks/
 .cursor/
 docs/temp
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
