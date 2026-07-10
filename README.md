@@ -61,3 +61,29 @@ npx wrangler pages deploy dist
 ```
 VITE_API_BASE_URL=https://my-worker.<你的子域名>.workers.dev
 ```
+
+## 问题总结
+
+记录开发与使用过程中遇到的关键问题及解决方案。
+
+### 示例 1：本地开发完后请求接口提示跨域请求（CORS）失败
+
+**问题描述**：前端调用 Worker API 时浏览器报跨域错误。
+
+**原因**：Worker 响应头未添加 `Access-Control-Allow-Origin`。
+
+**解决方案**：在 Worker 的 `fetch` 事件处理中添加 CORS 头。
+
+### 示例 2：部署到cloudeFlare后，接口不通
+
+**问题描述**：部署到 Cloudflare Pages 后后，接口不通失败，提示1301访问超时。
+
+**原因**：网络不通，需要科学上网；。
+
+**解决方案**：针对国内很少使用科学上网的方式访问网站；所以使用通的域名进行转接下。
+
+
+## 最终成果
+**前端项目地址**：https://github.com/zhouqi-7/cloudeflarefrontend
+**后端项目地址**：https://github.com/zhouqi-7/cloudeflareback
+**访问地址**：https://www.wasaihou666.kdns.fr/
